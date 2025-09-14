@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Squid Proxy Setup"
-category: "Automation"
 ---
 
 ```yaml

@@ -6,8 +6,8 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
 
-# ➕ Eigene Includes (Mermaid & Chart.js)
-includes_dir: _includes
+url: "https://specklab.github.io"
+baseurl: "/workflows"
 
 collections:
   projects:
@@ -22,6 +22,6 @@ author:
   avatar: "/assets/images/avatar.jpg"
   links:
     - label: "GitHub"
-      url: "https://github.com/dominik-speckbacher"
+      url: "https://github.com/specklab"
     - label: "LinkedIn"
       url: "https://linkedin.com/in/dominik-speckbacher"

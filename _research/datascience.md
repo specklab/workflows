@@ -1,11 +1,8 @@
 ---
 layout: page
-title: "Python Data Science Beispiel"
+title: "Netzwerk-Log Analyse"
 ---
 
-## Jupyter Notebook Analyse
+# 📊 Netzwerk-Log Analyse mit Python
 
-👉 [Öffnen in Google Colab](https://colab.research.google.com/)  
-👉 [Binder Notebook starten](https://mybinder.org/)
-
-Beispiel: Analyse von Netzwerk-Logs mit Python (pandas, matplotlib).
+👉 Beispiel mit pandas & matplotlib  

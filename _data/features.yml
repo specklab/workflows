@@ -1,25 +1,16 @@
 dashboard:
   - image_path: /assets/images/projects.png
     title: "📂 Projekte"
-    excerpt: "Homelab, Netzwerk, Automatisierung"
-    url: "/projects"
-  - image_path: /assets/images/blog.png
-    title: "📝 Blog"
-    excerpt: "Dokumentation meiner Lernreise"
-    url: "/blog"
+    url: "/workflows/projects"
   - image_path: /assets/images/playbooks.png
     title: "⚙️ Playbooks"
-    excerpt: "Ansible, Runbooks, Automatisierung"
-    url: "/playbooks"
+    url: "/workflows/playbooks"
   - image_path: /assets/images/research.png
     title: "🔬 Forschung"
-    excerpt: "Datenanalyse, Data Science, Experimente"
-    url: "/research"
+    url: "/workflows/research"
   - image_path: /assets/images/cv.png
     title: "📄 Lebenslauf"
-    excerpt: "Kurzprofil + PDF-Download"
-    url: "/lebenslauf"
+    url: "/workflows/lebenslauf"
   - image_path: /assets/images/contact.png
     title: "📬 Kontakt"
-    excerpt: "GitHub, LinkedIn, E-Mail"
-    url: "/kontakt"
+    url: "/workflows/kontakt"

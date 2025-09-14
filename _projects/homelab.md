@@ -1,16 +1,11 @@
 ---
-layout: project
+layout: page
 title: "Homelab Infrastruktur"
-category: "Netzwerk"
-tags: [proxmox, docker, pfsense]
 ---
 
-## Homelab
+# 🖧 Homelab Infrastruktur
 
-Aufbau einer virtualisierten Infrastruktur:
-
+Aufbau einer virtualisierten Infrastruktur mit:
 - Proxmox Cluster
-- pfSense Firewall + VLANs
-- Docker Services (Nextcloud, Portainer, Squid Proxy)
-
-{% include scripts.html %}
+- pfSense Firewall
+- Docker Services (Nextcloud, Portainer, Proxy)
