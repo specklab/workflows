@@ -1,0 +1,17 @@
+dashboard:
+  - image_path: /assets/images/projects.png
+    title: "📂 Projekte"
+    excerpt: "Homelab, Netzwerk, Automatisierung"
+    url: "/projekte"
+  - image_path: /assets/images/blog.png
+    title: "📝 Blog"
+    excerpt: "Dokumentation meiner Lernreise"
+    url: "/blog"
+  - image_path: /assets/images/cv.png
+    title: "📄 Lebenslauf"
+    excerpt: "Kurzprofil + PDF-Download"
+    url: "/lebenslauf"
+  - image_path: /assets/images/contact.png
+    title: "📬 Kontakt"
+    excerpt: "GitHub, LinkedIn, E-Mail"
+    url: "/kontakt"

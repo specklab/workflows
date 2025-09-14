@@ -1,0 +1,15 @@
+title: "Dominik Speckbacher – IT-Portfolio"
+description: "Homelab • Netzwerke • Automatisierung • Bewerbung"
+remote_theme: "mmistakes/minimal-mistakes"
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-feed
+author:
+  name: "Dominik Speckbacher"
+  avatar: "/assets/images/avatar.jpg"
+  links:
+    - label: "GitHub"
+      url: "https://github.com/dominik-speckbacher"
+    - label: "LinkedIn"
+      url: "https://linkedin.com/in/dominik-speckbacher"
