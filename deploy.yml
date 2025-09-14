@@ -1,0 +1,78 @@
+name: Build Docs, PDF and Private Cloud Upload
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:  # ermöglicht manuelles Starten
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install MkDocs
+        run: |
+          pip install mkdocs
+          pip install mkdocs-material
+
+      - name: Build HTML Docs
+        run: mkdocs build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+
+  export-pdf:
+    runs-on: ubuntu-latest
+    needs: build-deploy
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Pandoc + LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-xetex
+
+      - name: Convert Markdown to PDF
+        run: |
+          pandoc docs/notion-dashboard-essentials.md \
+            -o notion-dashboard-essentials.pdf \
+            --pdf-engine=xelatex
+
+      - name: Upload PDF as Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: notion-dashboard-essentials
+          path: notion-dashboard-essentials.pdf
+
+  upload-cloud:
+    runs-on: ubuntu-latest
+    needs: export-pdf
+    if: github.event_name == 'workflow_dispatch'  # nur bei manuellem Start
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install rclone
+        run: curl https://rclone.org/install.sh | sudo bash
+
+      - name: Configure rclone
+        run: |
+          mkdir -p ~/.config/rclone
+          echo "${{ secrets.RCLONE_CONFIG }}" > ~/.config/rclone/rclone.conf
+
+      - name: Upload PDF to Cloud
+        run: |
+          rclone copy notion-dashboard-essentials.pdf remote:bewerbungen/
