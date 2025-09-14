@@ -9,25 +9,28 @@ title: "Dashboard"
 
 ---
 
-## 📊 Lernfortschritt
+## 📊 Lernfortschritt (Chart.js)
 
-<div style="background:#eee;width:100%;border-radius:5px;margin:5px 0;">
-  <div style="width:70%;background:#4caf50;color:white;text-align:center;padding:5px;border-radius:5px;">
-    Python Grundlagen – 70%
-  </div>
-</div>
-
-<div style="background:#eee;width:100%;border-radius:5px;margin:5px 0;">
-  <div style="width:40%;background:#2196F3;color:white;text-align:center;padding:5px;border-radius:5px;">
-    Docker & Container – 40%
-  </div>
-</div>
-
-<div style="background:#eee;width:100%;border-radius:5px;margin:5px 0;">
-  <div style="width:20%;background:#f44336;color:white;text-align:center;padding:5px;border-radius:5px;">
-    Ansible Automation – 20%
-  </div>
-</div>
+<canvas id="skillsChart" style="max-width:600px;"></canvas>
+<script>
+const ctx = document.getElementById('skillsChart');
+new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Python', 'Docker', 'Ansible', 'Networking'],
+        datasets: [{
+            label: 'Lernfortschritt (%)',
+            data: [70, 40, 20, 60],
+            backgroundColor: ['#4caf50','#2196F3','#f44336','#9c27b0']
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: { y: { beginAtZero: true } }
+    }
+});
+</script>
 
 ---
 
