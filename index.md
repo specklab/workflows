@@ -45,7 +45,7 @@ new Chart(ctx, {
 ---
 
 ## 📅 Zeitstrahl (Mermaid)
-``` `mermaid`
+````mermaid`
 gantt
   title Lern- & Projektplan
   dateFormat  YYYY-MM-DD
