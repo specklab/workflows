@@ -13,69 +13,48 @@ Ziel: moderne, sichere und automatisierte IT-Infrastrukturen entwickeln und betr
 ---
 
 ## 🎓 Ausbildung
-- **Umschulung Fachinformatiker Systemintegration**  
-  GFN München • 10/2024 – 07/2026  
-  Schwerpunkte: Netzwerke, Serveradministration, Virtualisierung, Automatisierung
-
-
-## 🎓 Ausbildung
 - **Umschulung Fachinformatiker Systemintegration** – GFN München  
   *10/2024 – 07/2026*  
   Schwerpunkte: Netzwerke, Serveradministration, Virtualisierung, Automatisierung
 
+- **MünchenKolleg (Abitur nachgeholt)** – München  
+  *07/2018 – 12/2021*
+
 ---
 
-- **PV-Montage (Projektleiter)** 
-  **SonnexPT** 
-   *2022 – 2021*  
+## 💼 Berufserfahrung
+- **Freelancer IT & Webentwicklung**  
+  *06/2018 – 06/2021*  
+  - Betreuung kleiner Webprojekte  
+  - Einführung von Office-Automatisierung  
+  - Technischer Support
+
+- **Hausmeister / Organisation Event-Teams**  
+  *2011 – 2013*  
   - Organisation von Arbeitsabläufen & Logistik  
   - Verantwortung für kleine Teams  
   - Übertragbare Softskills: Struktur, Zuverlässigkeit, Problemlösung
-  
----
-
-  ## 💼 Berufserfahrung
-   **Freelancer IT & Webentwicklung**  
-   06/2018 – 06/2021  
-    Veranstaltungen
-    Messebau
-  
----
-
-**Lager / Organisation Event-Teams**  
-  (verschiedene Firmen, 2011–2013)  
-   Organisation von Arbeitsabläufen  
 
 ---
 
-**MünchenKolleg (Abitur nachgeholt)** – München  
-   07/2018 – 12/2021
-   Hausmeistertätigkeiten
-
----
-
-**MünchenKolleg (Abitur nachgeholt)**  
-  (Mittlere Reife, 2011–2013)  
-   Abschluss: 2,66
-
----
-
-## 🛠 Technische Skills**
-- **Systeme/Netzwerke:** Debian/Ubuntu Server, Windows Server, Proxmox, pfSense  
+## 🛠 Technische Skills
+- **Systeme/Netzwerke:** Debian/Ubuntu, Windows Server, Proxmox, pfSense  
 - **Container & Virtualisierung:** Docker, LXC, VirtualBox  
 - **Netzwerkdienste:** DNS (BIND), DHCP (Kea), NTP (Chrony), Mailserver (Postfix/Dovecot)  
-- **Programmierung & Skripting:** Python (Automation, Datenanalyse), Bash,            Grundkenntnisse C/Java  
-- **Tools:** Git/GitHub, VSCode, Ansible (Basis), Markdown, YAML  
+- **Programmierung & Skripting:** Python, Bash, Grundlagen in C/Java  
+- **Tools & Methoden:** Git/GitHub, VSCode, Ansible (Basis), Markdown, YAML  
 
 ---
 
 ## 🌱 Projekte
 - **Homelab (2024–2025):**  
   Aufbau einer virtualisierten Infrastruktur mit Proxmox, pfSense, Docker (Nextcloud, Portainer, Squid Proxy, NetBox).  
+  → Fokus: Netzwerksegmentierung, Automatisierung & Dokumentation  
   Dokumentation: [GitHub-Projekte](https://github.com/dominik-speckbacher)
 
 - **Automatisiertes Bewässerungssystem (ESP32 + Python):**  
-  Sensoren für Feuchtigkeit/Temperatur, Steuerung via Python & Logging.
+  Entwicklung eines IoT-Prototyps zur Pflanzenbewässerung mit Sensoren (Feuchtigkeit/Temperatur).  
+  → Fokus: Python-Skripting, Datenlogging & Hardwareintegration
 
 ---
 
@@ -88,7 +67,7 @@ Ziel: moderne, sichere und automatisierte IT-Infrastrukturen entwickeln und betr
 ## 📬 Kontakt
 - GitHub: [dominik-speckbacher](https://github.com/dominik-speckbacher)  
 - LinkedIn: [Dominik Speckbacher](https://linkedin.com/in/dominik-speckbacher)  
-- E-Mail: **deine@email.de**
+- E-Mail: dominik.speckbacher@gfn.education
 
 ---
 

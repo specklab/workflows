@@ -1,9 +1,6 @@
 ---
 layout: page
-title: "Sensor Datenanalyse"
+title: "Sensor-Datenanalyse"
 ---
 
-# 🌡️ Automatisierte Sensor-Datenanalyse
-
-- ESP32 + Feuchtigkeitssensor  
-- Logging & Auswertung mit Python  
+ESP32 + Python für Feuchtigkeitssensoren und Logging.

@@ -1,0 +1,33 @@
+# Dashboard-Features – Dominik Speckbacher
+# Diese Kacheln erscheinen auf der Startseite (index.md)
+
+- image_path: /assets/images/projects.png
+  title: "📂 Projekte"
+  excerpt: "Homelab, Netzwerktechnik & praktische Übungen – dokumentiert für Lernen & Praxis."
+  url: "/projects/"
+
+- image_path: /assets/images/playbooks.png
+  title: "⚙️ Playbooks"
+  excerpt: "Ansible-Snippets & Automatisierung: Provisionierung, Hardening & wiederholbare Deployments."
+  url: "/playbooks/"
+
+- image_path: /assets/images/research.png
+  title: "🔬 Research"
+  excerpt: "Forschung & Data Science: Python, Jupyter, Auswertungen und explorative Analysen."
+  url: "/research/"
+
+- image_path: /assets/images/cv.png
+  title: "📄 Lebenslauf"
+  excerpt: "Mein Werdegang, Kompetenzen & Zertifikate – strukturiert für Bewerbungen."
+  url: "/lebenslauf/"
+
+- image_path: /assets/images/contact.png
+  title: "📬 Kontakt"
+  excerpt: "Direkter Draht: GitHub, LinkedIn & Mail. Einfach vernetzen und ansprechen."
+  url: "/kontakt/"
+
+- image_path: /assets/images/blog.png
+  title: "📝 Blog"
+  excerpt: "Updates, Lernfortschritte & kleine Notizen – mein persönliches Lerntagebuch."
+  url: "/blog/"
+

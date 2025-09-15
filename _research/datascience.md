@@ -3,6 +3,4 @@ layout: page
 title: "Netzwerk-Log Analyse"
 ---
 
-# 📊 Netzwerk-Log Analyse mit Python
-
-👉 Beispiel mit pandas & matplotlib  
+Python, Pandas, Matplotlib für Datenanalyse von Logs.
