@@ -45,7 +45,7 @@ new Chart(ctx, {
 ---
 
 ## 📅 Zeitstrahl (Mermaid)
-```mermaid
+```mermaid```
 gantt
   title Lern- & Projektplan
   dateFormat  YYYY-MM-DD
@@ -54,6 +54,6 @@ gantt
   section Projekte
   Homelab-Doku         :2025-01-01, 6M
   Bewerbungs-Portfolio :2025-09-01, 3M
-  ```
-
+  
+---
 <script type="module"> import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs'; mermaid.initialize({ startOnLoad: true }); </script>
