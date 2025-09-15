@@ -21,16 +21,21 @@ Umschüler zum **Fachinformatiker Systemintegration** mit Fokus auf Homelab, Net
   {% endfor %}
 </ul>
 
----
-
 ## 📊 Skills (Chart.js)
 <canvas id="skillsChart" style="max-width:700px; height:360px;"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
 const ctx = document.getElementById('skillsChart');
 new Chart(ctx, {
     type: 'bar',
-    data: { labels: ['Python', 'Docker', 'Ansible', 'Networking'],
-      datasets: [{ label: 'Lernfortschritt (%)', data: [70, 45, 25, 60] }] },
+    data: {
+      labels: ['Python', 'Docker', 'Ansible', 'Networking'],
+      datasets: [{
+        label: 'Lernfortschritt (%)',
+        data: [70, 45, 25, 60],
+        backgroundColor: ['#36a2eb','#ff6384','#ffce56','#4bc0c0']
+      }]
+    },
     options: { scales: { y: { beginAtZero: true } } }
 });
 </script>
