@@ -21,8 +21,10 @@ Umschüler zum **Fachinformatiker Systemintegration** mit Fokus auf Homelab, Net
   {% endfor %}
 </ul>
 
+---
+
 ## 📊 Skills (Chart.js)
-<canvas id="skillsChart" style="max-width:700px; height:360px;"></canvas>
+<canvas id="skillsChart" style="max-width:700px; height:360px; margin: 20px auto; display: block;"></canvas>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
 const ctx = document.getElementById('skillsChart');
@@ -52,4 +54,5 @@ gantt
   section Projekte
   Homelab-Doku         :2025-01-01, 6M
   Bewerbungs-Portfolio :2025-09-01, 3M
-```
+<script type="module"> import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs'; mermaid.initialize({ startOnLoad: true }); </script>
+
