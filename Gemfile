@@ -7,7 +7,7 @@ group :jekyll_plugins do
   gem "jekyll-seo-tag"
   gem "jekyll-feed"
   gem "jekyll-archives"
-  gem "jekyll-remote-theme"   
+  gem "minimal-mistakes-jekyll" 
 end
 
 
