@@ -1,10 +1,9 @@
-name: Jekyll site CI
+name: Build and Deploy Jekyll site
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches:
+      - main  # baue automatisch bei Änderungen auf main
 
 jobs:
   build:
@@ -17,11 +16,33 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1'   # stabile Ruby-Version
+          ruby-version: 3.4  # <- wichtig! mindestens 3.2, besser 3.4
           bundler-cache: true
 
       - name: Install dependencies
         run: bundle install
 
       - name: Build Jekyll site
-        run: bundle exec jekyll build --trace
+        run: bundle exec jekyll build
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
