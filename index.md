@@ -23,8 +23,34 @@ Umschüler zum **Fachinformatiker Systemintegration** mit Fokus auf Homelab, Net
 
 ---
 
-## 📊 Skills (Chart.js)
-<canvas id="skillsChart" style="max-width:700px; height:360px; margin: 20px auto; display: block;"></canvas>
+## 📊 Dashboard
+<div class="dashboard-grid">
+
+  <!-- Chart.js -->
+  <div class="dashboard-item">
+    <h3>📊 Skills (Chart.js)</h3>
+    <canvas id="skillsChart" style="max-width:100%; height:360px;"></canvas>
+  </div>
+
+  <!-- Mermaid -->
+  <div class="dashboard-item">
+    <h3>📅 Zeitstrahl (Mermaid)</h3>
+    ```mermaid
+    gantt
+      title Lern- & Projektplan
+      dateFormat  YYYY-MM-DD
+      section Ausbildung
+      Umschulung :a1, 2024-10-01, 2026-07-01
+      section Projekte
+      Homelab-Doku         :2025-01-01, 6M
+      Bewerbungs-Portfolio :2025-09-01, 3M
+    ```
+  </div>
+
+</div>
+
+---
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
 const ctx = document.getElementById('skillsChart');
@@ -42,17 +68,7 @@ new Chart(ctx, {
 });
 </script>
 
----
-
-## 📅 Zeitstrahl (Mermaid)
-````mermaid`
-gantt
-  title Lern- & Projektplan
-  dateFormat  YYYY-MM-DD
-  section Ausbildung
-  Umschulung :a1, 2024-10-01, 2026-07-01
-  section Projekte
-  Homelab-Doku         :2025-01-01, 6M
-  Bewerbungs-Portfolio :2025-09-01, 3M```
-  
-<script type="module"> import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs'; mermaid.initialize({ startOnLoad: true }); </script>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
