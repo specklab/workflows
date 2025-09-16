@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Homelab Projektupdate"
 categories: [homelab]
 tags: [proxmox, docker, monitoring]

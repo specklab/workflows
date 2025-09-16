@@ -1,0 +1,20 @@
+# 🔬 Research & Data Science
+
+In diesem Bereich sammle ich meine **technischen Experimente und Analysen**.  
+Von Data Science mit Python bis hin zu Sensorik und IoT.
+
+---
+
+## 📊 Data Science
+- Log-Analyse mit **Python, Pandas, Matplotlib**  
+- Auswertung von Netzwerk-Logs & Systemmetriken  
+
+👉 Datei: [`_research/datascience.md`](../_research/datascience.md)
+
+---
+
+## 🌱 Sensorik
+- Datenaufnahme mit ESP32 & Sensoren (Feuchtigkeit, Temperatur)  
+- Logging, Automatisierung und Auswertung  
+
+👉 Datei: [`_research/sensors.md`](../_research/sensors.md)

@@ -61,15 +61,20 @@ sass:
   sass_dir: _sass
   style: compressed
 
-# Defaults für alle Seiten
 defaults:
-  - scope:
-      path: ""
-      type: pages
+  - scope: { path: "", type: pages }
     values:
       layout: single
       sidebar:
         nav: "main"
+  - scope: { path: "", type: posts }
+    values: { layout: single }
+  - scope: { path: "", type: projects }
+    values: { layout: single }
+  - scope: { path: "", type: playbooks }
+    values: { layout: single }
+  - scope: { path: "", type: research }
+    values: { layout: single }
 
 
 
